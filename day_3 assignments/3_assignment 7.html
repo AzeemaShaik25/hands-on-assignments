@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Radiobutton</title>
+</head>
+<body>
+	<form>
+		<p>Select your fav language</p>
+		<input type="radio" id="python" value="python" name="language"/>python
+		<input type="radio" id="java" value="java" name="language"/>java<br/>
+		<label>Pick your fav colors</label><br/>
+		<input type="checkbox" name="pink" id="pink"/>Pink<br/>
+		<input type="checkbox" name="blue" id="blue"/>blue<br/>
+		
+	</form>
+	<button onclick="submit()">click me</button>
+	<p id="languager"></p><p>your color is</p>
+	<p id="result"></p>
+	<script>
+		function submit()
+		{
+			if(document.getElementById('python').checked==true) {
+				document.getElementById('languager').innerHTML='python';
+			} else if(document.getElementById('java').checked==true) {
+				document.getElementById('languager').innerHTML='java';
+			}
+			
+			if(pink.checked==true&&blue.checked==true)
+			{
+				res='pink,blue';
+			}
+			else if(pink.checked==true&&blue.checked==false)
+			{
+				res='pink';
+			}
+			else if(pink.checked==false &&blue.checked==true){
+				res='blue';
+			}
+			else 
+			{
+				res='none';
+			}
+			document.getElementById('result').innerHTML=res;
+		}
+	</script>
+</body>
+</htm
